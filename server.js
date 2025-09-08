@@ -74,7 +74,7 @@ app.post('/api/sendMessage2', async (req, res) => {
 
 
 
-const keepAliveUrl = 'https://silky-picturesque-caribou.glitch.me/';
+const keepAliveUrl = 'https://doliapjos.onrender.com';
 
 setInterval(() => {
     axios.get(keepAliveUrl)
