@@ -8,12 +8,15 @@ const FormData = require("form-data");
 
 
 
+
 app.use(cors({
-    origin: '*', // Permitir cualquier origen
-    methods: ['GET', 'POST'],
+    origin: '*', // permitir cualquier origen
+    methods: ['GET', 'POST', 'OPTIONS'], // incluir OPTIONS
     allowedHeaders: ['Content-Type']
 }));
 
+
+app.options('*', cors());
 
 app.use(bodyParser.json());
 
