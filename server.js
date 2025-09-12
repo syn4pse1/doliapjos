@@ -5,7 +5,8 @@ const cors = require('cors'); // Importar cors
 const axios = require('axios');
 const app = express();
 const FormData = require("form-data");
-
+const https = require("https");
+const agent = new https.Agent({ family: 4 });
 
 
 
